@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/rack/rack
+  revision: f2d2df4016a906beec755b63b4edfcc07b58ee05
+  specs:
+    rack (2.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -6,6 +12,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rack!
 
 BUNDLED WITH
    1.17.3
