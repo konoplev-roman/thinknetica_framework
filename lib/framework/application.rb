@@ -12,6 +12,11 @@ module Framework
       @router = Router.new
     end
 
+    def bootstrap!
+      require_app
+      require_routes
+    end
+
     def call(env)
       route = @router.route_for(env)
 
@@ -29,6 +34,14 @@ module Framework
 
     def make_response(controller, action)
       controller.make_response(action)
+    end
+
+    def require_app
+      Dir["#{Framework.root}/app/**/*.rb"].sort.each { |file| require file }
+    end
+
+    def require_routes
+      require Framework.root.join('config/routes')
     end
   end
 end
