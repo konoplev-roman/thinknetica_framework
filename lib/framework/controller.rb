@@ -10,7 +10,11 @@ module Framework
     def make_response(action)
       [
         200,
-        { 'Content-Type' => 'text/plain', 'X-Action' => action },
+        {
+          'Content-Type' => 'text/plain',
+          'X-Controller' => self.class.name,
+          'X-Action' => action
+        },
         ["Framework in action\n"]
       ]
     end
