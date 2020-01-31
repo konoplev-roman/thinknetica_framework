@@ -6,6 +6,10 @@
 </head>
 <body>
     <p>Framework in action!</p>
-    <p><%= @time %></p>
+    <ul>
+      <% @tests.each do |test| %>
+        <li><%= test.title %> (<%= test.level %>)</li>
+      <% end %>
+    </ul>
 </body>
 </html>

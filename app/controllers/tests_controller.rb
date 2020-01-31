@@ -5,7 +5,7 @@ class TestsController < Framework::Controller
     # It is possible to use a custom template
     # render('tests/list')
 
-    @time = Time.now
+    @tests = Test.all
   end
 
   def create; end
