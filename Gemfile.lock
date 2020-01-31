@@ -8,6 +8,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     sequel (5.28.0)
+    sqlite3 (1.4.2)
 
 PLATFORMS
   ruby
@@ -15,6 +16,7 @@ PLATFORMS
 DEPENDENCIES
   rack!
   sequel
+  sqlite3
 
 BUNDLED WITH
    1.17.3
