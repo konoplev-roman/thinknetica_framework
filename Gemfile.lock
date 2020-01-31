@@ -7,12 +7,14 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    sequel (5.28.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   rack!
+  sequel
 
 BUNDLED WITH
    1.17.3
